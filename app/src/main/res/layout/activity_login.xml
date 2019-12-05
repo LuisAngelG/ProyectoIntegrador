@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_background"
+        android:scaleType="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/ic_login"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/txt_email_login"
+            android:layout_width="match_parent"
+            android:textSize="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electronico"/>
+
+        <EditText
+            android:id="@+id/txt_password_login"
+            android:layout_width="match_parent"
+            android:textSize="24dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textSize="32dp" />
+
+        <Button
+            android:id="@+id/btn_register_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="32dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
